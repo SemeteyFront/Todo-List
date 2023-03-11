@@ -1,0 +1,33 @@
+.post {
+  display: flex;
+  /* justify-content: center; */
+  width: 1000px;
+}
+.post__list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  /* margin-top: 50px; */
+}
+.post__add {
+  background-color: rgb(240, 168, 81);
+  width: 1600px;
+  height: 200px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+}
+.post__inp {
+  height: 30px;
+  width: 300px;
+}
+.post__title {
+  display: flex;
+  align-items: center;
+}
+.post__title__done {
+  display: flex;
+  align-items: center;
+  text-decoration: line-through;
+}

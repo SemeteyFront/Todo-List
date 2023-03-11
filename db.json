@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "title": "lorem dolor emn",
+      "body": "123",
+      "id": 1
+    },
+    {
+      "title": "dolor color lorem",
+      "body": "dsafsaf",
+      "id": 2
+    },
+    {
+      "title": "transition",
+      "body": "asdfsafsd",
+      "id": 3
+    },
+    {
+      "title": "hello typscript",
+      "body": "dawdwa",
+      "id": 4
+    }
+  ]
+}
