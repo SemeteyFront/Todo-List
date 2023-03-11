@@ -10,13 +10,18 @@ import { styled } from "@mui/material/styles";
 const PostContainer: React.FC = () => {
   const [task, setTask] = useState<string>("");
   const [limit, setLimit] = useState(100);
+
+
   const {
     data: posts,
     error,
     isLoading,
   } = postAPI.useFetchAllPostsQuery(limit);
+
   const [createPost, {}] = postAPI.useCreatePostMutation({});
+
   const [updatePost, {}] = postAPI.useUpdatePostMutation();
+
   const [deletePost, {}] = postAPI.useDeletePostMutation();
 
   const handleCreate = async () => {
@@ -33,11 +38,12 @@ const PostContainer: React.FC = () => {
   const handleRemove = (post: IPost) => {
     deletePost(post);
   };
+  
 
   const handleUpdate = (post: IPost) => {
     updatePost(post);
   };
-  ///////////////
+
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     setTask(event.target.value);
@@ -51,7 +57,6 @@ const PostContainer: React.FC = () => {
     },
   }));
 
-  ///////////////
   return (
     <div>
       <div className="post__list">

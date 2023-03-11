@@ -33,13 +33,6 @@ const style = {
   display: "flex",
   justifyContent: "center",
 };
-// const ColorButton = styled(Button)(({ theme }) => ({
-//   color: theme.palette.getContrastText(purple[500]),
-//   backgroundColor: purple[500],
-//   "&:hover": {
-//     backgroundColor: purple[700],
-//   },
-// }));
 
 const PostItem: FC<PostItemProps> = ({ post, remove, update }) => {
   const handleRemove = (event: React.MouseEvent) => {
